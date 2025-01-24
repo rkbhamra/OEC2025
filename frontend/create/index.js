@@ -30,7 +30,7 @@ async function getNear() {
 async function submitReport() {
   const type = document.getElementById("disasterType").value;
   const img = document.getElementById("disasterImage").files[0];
-  const svSliderSubmit = document.getElementById("severitySlider").value
+  const svSliderSubmit = "1"// document.getElementById("severitySlider").value
 
   let city = ""
   let prov = ""
@@ -39,24 +39,33 @@ async function submitReport() {
   let gpslong = ""
   console.log(svSliderSubmit)
 
-  fetch("https://api.ipify.org?format=json")
+  await fetch("https://api.ipify.org?format=json")
     .then((res) => res.json())
-    .then((data) => {
+    .then(async (data) => {
       console.log(data);
-      fetch(`https://api.ipapi.is?q=${data.ip}`)
+      await fetch(`https://api.ipapi.is?q=${data.ip}`)
         .then((res2) => res2.json())
         .then((data2) => {
           city = data2.location.city;
           prov = data2.location.state
           country = data2.location.country
-          gpslat = data2.location.latitude
-          gpslong = data2.location.longitude
+          gpslat = data2.location.latitude.toString()
+          gpslong = data2.location.longitude.toString()
           console.log(data2);
         });
     });
 
-  fetch("http://127.0.0.1:5000/submit", {
+  console.log(city,
+    prov,
+    country,
+    type,
+    svSliderSubmit,
+    gpslat,
+    gpslong)
+
+  await fetch("http://127.0.0.1:5000/submit", {
     method: "POST",
+    headers: new Headers({'content-type': 'application/json'}),
     body: JSON.stringify({
       city,
       prov,
@@ -66,6 +75,7 @@ async function submitReport() {
       gpslat,
       gpslong
     }),
+    
   })
     .then((response) => response.json())
     .then((data) => {

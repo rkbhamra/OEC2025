@@ -22,7 +22,7 @@ def report(lat, long, dtype, city,  prov, country, severity, time):
     cnx.commit()
 
 def getTopNearMe(city):
-    curL.execute(f"SELECT * FROM disastertracker.reports WHERE CITY = \"{city}\" ORDER BY TotalReports LIMIT 5")
+    curL.execute(f"SELECT r.*, t.disastertype FROM reports r INNER JOIN disastertypes t ON t.Id = r.Type WHERE CITY = \"{city}\" ORDER BY TotalReports DESC LIMIT 5")
     # print(curL.fetchall())
     return curL.fetchall()
     

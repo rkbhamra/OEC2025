@@ -35,9 +35,9 @@ async function init() {
         <p class="card-text"><strong>City:</strong> ${e[1]}</p>
         <p class="card-text"><strong>Province:</strong> ${e[2]}</p>
         <p class="card-text"><strong>Country:</strong> ${e[3]}</p>
-        <p class="card-text"><strong>Type:</strong> ${e[4]}</p>
-        <p class="card-text"><strong>Total Reports:</strong> ${e[5]}</p>
-        <p class="card-text"><strong>Status:</strong> ${e[6]}</p>
+        <p class="card-text"><strong>Type:</strong> ${e[10]}</p>
+        <p class="card-text"><strong>Total Reports:</strong> ${e[6]}</p>
+        <p class="card-text"><strong>Status:</strong> ${e[5]}</p>
         <p class="card-text"><strong>Latitude:</strong> ${e[7]}</p>
         <p class="card-text"><strong>Longitude:</strong> ${e[8]}</p>
         <p class="card-text"><strong>Time:</strong> ${new Date(e[9]).toLocaleString()}</p>
