@@ -1,3 +1,4 @@
+// scuffed way to implement componenents in vanilla JS
 class Navbar extends HTMLElement {
   constructor() {
     super();
@@ -10,9 +11,10 @@ class Navbar extends HTMLElement {
     this.style.zIndex = "1000";
     this.style.position = "relative";
     this.addToggleBehavior();
-    this.addHeightBehavior();
+    // this.addAlertSocket();
   }
 
+  // mobile collapseable navbar: toggle between X and hamburger icon
   addToggleBehavior() {
     const navbarToggler = this.querySelector("#navbarToggler");
     const togglerIcon = this.querySelector("#togglerIcon");
@@ -30,16 +32,27 @@ class Navbar extends HTMLElement {
     }
   }
 
-  addHeightBehavior() {
-    const navbarList = this.querySelector(".navbar-nav");
+  // alert live info at current city
+  addAlertSocket() {
+    let data =
+      "asdasdasd asdasdasd asdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasd   ";
 
-    window.addEventListener("resize", () => {
-      if (window.innerWidth >= 992) {
-        navbarList.style.height = "";
-      } else {
-        navbarList.style.height = "calc(100vh - 74px)";
-      }
+    const closeBtn = document.createElement("div");
+    closeBtn.innerHTML = '<i class="fa fa-times"></i>';
+    closeBtn.style.position = "absolute";
+    closeBtn.style.top = "10px";
+    closeBtn.style.right = "10px";
+    closeBtn.addEventListener("click", () => {
+      closeBtn.parentElement.remove();
     });
+
+    const alertElement = document.createElement("div");
+    alertElement.classList.add("alert", "alert-warning");
+    alertElement.style.position = "relative";
+    alertElement.innerHTML = data;
+    alertElement.appendChild(closeBtn);
+
+    document.querySelector("#alert").appendChild(alertElement);
   }
 }
 
