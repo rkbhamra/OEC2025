@@ -75,9 +75,11 @@ async function submitReport() {
     .then((response) => response.json())
     .then((data) => {
       console.log("Success:", data);
-      socket.send("New report submitted");
     })
     .catch((error) => {
       console.error("Error:", error);
     });
+
+  socket.send("New report submitted");
+  window.location.href = "../submitted";
 }
