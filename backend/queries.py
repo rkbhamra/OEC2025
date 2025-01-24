@@ -15,4 +15,6 @@ def getCategories():
     curL.execute(f"SELECT * FROM disastertypes ORDER BY Id = 0, DisasterType")
     print(curL.fetchall())
 
+def report(GPSpos, type, )
+
 getCategories()
