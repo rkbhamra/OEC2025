@@ -22,7 +22,13 @@
       </div>
     </section>
     <section class="container my-5">
-      <form>
+      <form action="" id="newReportForm">
+        <!-- <select class="mb-3" id="dtypeDropdown">
+          <option selected disabled>Please choose...</option>
+          <option value="5">Flood</option>
+          <option value="1">Fire</option>
+          <option value="3">Hurricane</option>
+        </select>  -->
         <div class="mb-3">
           <label for="disasterType" class="form-label">Type of Disaster</label>
           <input type="text" class="form-control" id="disasterType" placeholder="Enter disaster type" required />
@@ -31,7 +37,17 @@
           <label for="disasterImage" class="form-label">Upload Image (optional)</label>
           <input type="file" class="form-control" id="disasterImage" accept="image/*" />
         </div>
+        <div class="mb-3">
+          <label for="disasterSeverity" class="form-label">Select current severity of the disaster</label><br/>
+          <input type="range" min="1" max="10" value="1" id="severitySlider">
+          <h3 id="severityOut">1</h3>
+        </div>
         <button class="btn btn-primary" type="button" onclick="submitReport()">Submit Report</button>
+      </form>
+      
+      <form action="" id="getbycity">
+        <input type="text" class="form-control" id="citySrch" placeholder="Enter your city">
+        <button type="button" onclick="getNear()">Submit</button>
       </form>
     </section>
 

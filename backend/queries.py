@@ -13,12 +13,20 @@ curL = cnx.cursor()
 
 def getCategories():
     curL.execute(f"SELECT * FROM disastertypes ORDER BY Id = 0, DisasterType")
-    print(curL.fetchall())
+    # print(curL.fetchall())
+    return curL.fetchall()
 
-def report(GPSpos, dtype, city,  prov, country, severity, time):
+def report(lat, long, dtype, city,  prov, country, severity, time):
     curL.execute("INSERT into reports (City, Province, Country, Type, Severity, TotalReports, Latitude, Longitude, TimeOfReport) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", 
-                (city, prov, country, dtype, severity, 1, GPSpos[0], GPSpos[1], time))
+                (city, prov, country, dtype, severity, 1, lat, long, time))
+    cnx.commit()
+
+def getTopNearMe(city):
+    curL.execute(f"SELECT * FROM disastertracker.reports WHERE CITY = \"{city}\" ORDER BY TotalReports LIMIT 5")
+    # print(curL.fetchall())
+    return curL.fetchall()
+    
 
 
 getCategories()
-report([43.641681, -79.459243], 1, "Toronto", "ON", "Canada", 4, "2025-01-14 16:33:00")
+# report([43.641681, -79.459243], 1, "Toronto", "ON", "Canada", 4, "2025-01-14 16:33:00")
