@@ -1,21 +1,23 @@
+import { socket } from "../global.js";
+
 function populateDisasters() {
-  const select = document.getElementById("dtypeDropdown")
+  const select = document.getElementById("dtypeDropdown");
   // let cat = getCategories()
-  select.append()
+  select.append();
 }
 
-const svSlider = document.getElementById("severitySlider")
-const svOut = document.getElementById("severityOut")
+const svSlider = document.getElementById("severitySlider");
+const svOut = document.getElementById("severityOut");
 
-svSlider.oninput = function() {
-  svOut.innerHTML = this.value
-}
+svSlider.oninput = function () {
+  svOut.innerHTML = this.value;
+};
 
 async function getNear() {
-  const city = document.getElementById("citySrch").value
+  const city = document.getElementById("citySrch").value;
 
   fetch("http://127.0.0.1:5000/data/" + city, {
-    method: "GET"
+    method: "GET",
   })
     .then((response) => response.json())
     .then((data) => {
@@ -24,20 +26,20 @@ async function getNear() {
     .catch((error) => {
       console.error("Error:", error);
     });
-
 }
 
+document.submitReport = submitReport;
 async function submitReport() {
   const type = document.getElementById("disasterType").value;
   const img = document.getElementById("disasterImage").files[0];
-  const svSliderSubmit = "1"// document.getElementById("severitySlider").value
+  const svSliderSubmit = "1"; // document.getElementById("severitySlider").value
 
-  let city = ""
-  let prov = ""
-  let country = ""
-  let gpslat = ""
-  let gpslong = ""
-  console.log(svSliderSubmit)
+  let city = "";
+  let prov = "";
+  let country = "";
+  let gpslat = "";
+  let gpslong = "";
+  console.log(svSliderSubmit);
 
   await fetch("https://api.ipify.org?format=json")
     .then((res) => res.json())
@@ -47,25 +49,19 @@ async function submitReport() {
         .then((res2) => res2.json())
         .then((data2) => {
           city = data2.location.city;
-          prov = data2.location.state
-          country = data2.location.country
-          gpslat = data2.location.latitude.toString()
-          gpslong = data2.location.longitude.toString()
+          prov = data2.location.state;
+          country = data2.location.country;
+          gpslat = data2.location.latitude.toString();
+          gpslong = data2.location.longitude.toString();
           console.log(data2);
         });
     });
 
-  console.log(city,
-    prov,
-    country,
-    type,
-    svSliderSubmit,
-    gpslat,
-    gpslong)
+  console.log(city, prov, country, type, svSliderSubmit, gpslat, gpslong);
 
   await fetch("http://127.0.0.1:5000/submit", {
     method: "POST",
-    headers: new Headers({'content-type': 'application/json'}),
+    headers: new Headers({ "content-type": "application/json" }),
     body: JSON.stringify({
       city,
       prov,
@@ -73,13 +69,13 @@ async function submitReport() {
       type,
       svSliderSubmit,
       gpslat,
-      gpslong
+      gpslong,
     }),
-    
   })
     .then((response) => response.json())
     .then((data) => {
       console.log("Success:", data);
+      socket.send("New report submitted");
     })
     .catch((error) => {
       console.error("Error:", error);

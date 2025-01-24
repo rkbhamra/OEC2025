@@ -1,22 +1,7 @@
-function createSocket() {
-  const socket = new WebSocket("http://localhost:????");
+const socket = new WebSocket("http://127.0.0.1:5000/socket/alert");
 
-  socket.onopen = function (event) {
-    console.log("WebSocket is open now.");
-  };
+socket.addEventListener("open", () => {
+  console.log("WebSocket connection established");
+});
 
-  socket.onmessage = function (event) {
-    alert("Message from server: " + event.data);
-    let socketDiv = document.querySelector("#alerts");
-    let alert = document.createElement("div");
-    alert.classList.add("alert");
-    alert.classList.add("alert-primary");
-
-    alert.innerHTML = event.data;
-    socketDiv.appendChild(alert);
-  };
-
-  socket.onclose = function (event) {
-    console.log("WebSocket is closed now.");
-  };
-}
+export { socket };

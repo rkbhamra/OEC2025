@@ -1,3 +1,5 @@
+import { socket } from "./global.js";
+
 // scuffed way to implement componenents in vanilla JS
 class Navbar extends HTMLElement {
   constructor() {
@@ -11,7 +13,7 @@ class Navbar extends HTMLElement {
     this.style.zIndex = "1000";
     this.style.position = "relative";
     this.addToggleBehavior();
-    // this.addAlertSocket();
+    this.addAlertSocket();
   }
 
   // mobile collapseable navbar: toggle between X and hamburger icon
@@ -34,25 +36,32 @@ class Navbar extends HTMLElement {
 
   // alert live info at current city
   addAlertSocket() {
-    let data =
-      "asdasdasd asdasdasd asdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasdasdasdasd asdasdasd   ";
+    socket.addEventListener("message", (event) => {
+      const closeBtn = document.createElement("div");
+      closeBtn.innerHTML = '<i class="fa fa-times"></i>';
+      closeBtn.style.position = "absolute";
+      closeBtn.style.top = "10px";
+      closeBtn.style.right = "10px";
+      closeBtn.addEventListener("click", () => {
+        closeBtn.parentElement.remove();
+      });
 
-    const closeBtn = document.createElement("div");
-    closeBtn.innerHTML = '<i class="fa fa-times"></i>';
-    closeBtn.style.position = "absolute";
-    closeBtn.style.top = "10px";
-    closeBtn.style.right = "10px";
-    closeBtn.addEventListener("click", () => {
-      closeBtn.parentElement.remove();
+      const alertElement = document.createElement("div");
+      alertElement.classList.add("alert", "alert-warning");
+      alertElement.style.position = "relative";
+      alertElement.innerHTML = event.data;
+      alertElement.appendChild(closeBtn);
+
+      document.querySelector("#alert").appendChild(alertElement);
     });
 
-    const alertElement = document.createElement("div");
-    alertElement.classList.add("alert", "alert-warning");
-    alertElement.style.position = "relative";
-    alertElement.innerHTML = data;
-    alertElement.appendChild(closeBtn);
+    socket.addEventListener("close", () => {
+      console.log("WebSocket connection closed");
+    });
 
-    document.querySelector("#alert").appendChild(alertElement);
+    socket.addEventListener("error", (error) => {
+      console.error("WebSocket error:", error);
+    });
   }
 }
 
