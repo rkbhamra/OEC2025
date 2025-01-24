@@ -12,7 +12,19 @@ svSlider.oninput = function() {
 }
 
 async function getNear() {
-  const city = document
+  const city = document.getElementById("citySrch").value
+
+  fetch("http://127.0.0.1:5000/data/" + city, {
+    method: "GET"
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+
 }
 
 async function submitReport() {
