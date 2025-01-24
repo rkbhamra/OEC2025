@@ -1,0 +1,501 @@
+Virus,Surveillance week,2024-2025,2023-2024,2022-2023
+ADV,35,0.9,1.6,2
+ADV,36,0.9,1.5,2
+ADV,37,0.7,1.5,2
+ADV,38,0.7,0.9,2
+ADV,39,0.9,1.1,2
+ADV,40,1,1.4,2
+ADV,41,1.1,1.4,2
+ADV,42,1,1.4,2
+ADV,43,1.1,1.5,2
+ADV,44,1.3,1.8,2
+ADV,45,1.5,1.4,2
+ADV,46,1.9,2,2
+ADV,47,2,1.9,2
+ADV,48,1.9,2.1,2
+ADV,49,2.1,1.8,2
+ADV,50,1.9,2,2
+ADV,51,1.7,1.6,2
+ADV,52,1.7,1.8,2
+ADV,1,1.6,1.5,2
+ADV,2,1.4,1.3,2
+ADV,3,1.4,1.1,2
+ADV,4,N/A,1.6,2
+ADV,5,N/A,1.6,2
+ADV,6,N/A,1.8,2
+ADV,7,N/A,1.2,2
+ADV,8,N/A,1.3,3
+ADV,9,N/A,1.6,3
+ADV,10,N/A,1.3,3
+ADV,11,N/A,1.3,2
+ADV,12,N/A,1.4,3
+ADV,13,N/A,1.6,3
+ADV,14,N/A,1.6,3
+ADV,15,N/A,1.4,3
+ADV,16,N/A,1.5,3
+ADV,17,N/A,1.4,3
+ADV,18,N/A,1.5,4
+ADV,19,N/A,1.3,3
+ADV,20,N/A,1.6,3
+ADV,21,N/A,1.6,3
+ADV,22,N/A,1.1,3
+ADV,23,N/A,1.4,3
+ADV,24,N/A,1.2,4
+ADV,25,N/A,1.2,4
+ADV,26,N/A,1.2,4
+ADV,27,N/A,1.2,5
+ADV,28,N/A,1.2,4
+ADV,29,N/A,1,3
+ADV,30,N/A,1.1,4
+ADV,31,N/A,0.9,3
+ADV,32,N/A,0.8,2
+ADV,33,N/A,1,2
+ADV,34,N/A,0.9,2
+EV/RV,35,9.5,12.5,16
+EV/RV,36,10.1,14.8,16
+EV/RV,37,13.2,18.3,22
+EV/RV,38,19,20.3,24
+EV/RV,39,20.5,18.5,23
+EV/RV,40,19.8,17.4,19
+EV/RV,41,19.4,15.7,17
+EV/RV,42,15.7,13.1,13
+EV/RV,43,14.5,12.5,11
+EV/RV,44,13.6,10.8,10
+EV/RV,45,14,10.7,8
+EV/RV,46,14.6,8.6,7
+EV/RV,47,13.7,7.6,5
+EV/RV,48,13.5,6.8,5
+EV/RV,49,11.6,6,4
+EV/RV,50,10.8,5.9,5
+EV/RV,51,10,5.6,5
+EV/RV,52,8.9,4.7,5
+EV/RV,1,7,4.8,4
+EV/RV,2,5.9,4.4,5
+EV/RV,3,5.4,4.6,7
+EV/RV,4,N/A,4.4,8
+EV/RV,5,N/A,5,9
+EV/RV,6,N/A,6.3,10
+EV/RV,7,N/A,6.2,10
+EV/RV,8,N/A,6.2,10
+EV/RV,9,N/A,6.5,10
+EV/RV,10,N/A,6.5,9
+EV/RV,11,N/A,6.7,9
+EV/RV,12,N/A,6.6,9
+EV/RV,13,N/A,7.4,8
+EV/RV,14,N/A,7.5,9
+EV/RV,15,N/A,8.5,9
+EV/RV,16,N/A,9.5,9
+EV/RV,17,N/A,11.5,10
+EV/RV,18,N/A,10.4,11
+EV/RV,19,N/A,10.3,11
+EV/RV,20,N/A,10.8,11
+EV/RV,21,N/A,11.5,11
+EV/RV,22,N/A,11.7,11
+EV/RV,23,N/A,12.3,12
+EV/RV,24,N/A,12.5,12
+EV/RV,25,N/A,12.8,14
+EV/RV,26,N/A,12.1,13
+EV/RV,27,N/A,12.5,14
+EV/RV,28,N/A,11.5,14
+EV/RV,29,N/A,8.8,13
+EV/RV,30,N/A,9.3,13
+EV/RV,31,N/A,7.9,12.7
+EV/RV,32,N/A,7.8,13.9
+EV/RV,33,N/A,7.6,12.8
+EV/RV,34,N/A,7.7,12.6
+HCoV,35,0.5,0.3,0.5
+HCoV,36,0.6,0.4,0.4
+HCoV,37,0.7,0.2,0.3
+HCoV,38,0.7,0.5,0.3
+HCoV,39,0.6,0.3,0.6
+HCoV,40,0.6,0.3,0.9
+HCoV,41,0.4,0.3,1
+HCoV,42,0.4,0.2,1.2
+HCoV,43,0.4,0.4,1.9
+HCoV,44,0.4,0.4,2.5
+HCoV,45,0.7,0.4,3
+HCoV,46,0.7,0.7,3.5
+HCoV,47,0.9,0.7,3.2
+HCoV,48,1.2,0.8,3.9
+HCoV,49,1.5,1.1,4.5
+HCoV,50,1.8,1.5,5.1
+HCoV,51,2.6,1.8,5.3
+HCoV,52,3.1,2.5,4.7
+HCoV,1,3.6,3.1,4.4
+HCoV,2,3.5,3.2,4
+HCoV,3,3.8,3.9,3.5
+HCoV,4,N/A,5.2,2.6
+HCoV,5,N/A,5.1,3.2
+HCoV,6,N/A,6.8,2.6
+HCoV,7,N/A,7.7,3.1
+HCoV,8,N/A,8.3,3.1
+HCoV,9,N/A,7.1,3.4
+HCoV,10,N/A,6.8,3.7
+HCoV,11,N/A,7.2,3.7
+HCoV,12,N/A,6.8,4.5
+HCoV,13,N/A,6,4
+HCoV,14,N/A,6.8,4.5
+HCoV,15,N/A,5.5,3.6
+HCoV,16,N/A,4.9,3.6
+HCoV,17,N/A,4.8,4.4
+HCoV,18,N/A,4.4,3.4
+HCoV,19,N/A,3.4,3.5
+HCoV,20,N/A,2.6,2.7
+HCoV,21,N/A,2,2.1
+HCoV,22,N/A,1.8,2.3
+HCoV,23,N/A,1.4,1.5
+HCoV,24,N/A,1,1.6
+HCoV,25,N/A,0.9,1.6
+HCoV,26,N/A,0.6,1.1
+HCoV,27,N/A,1.1,0.8
+HCoV,28,N/A,0.7,0.6
+HCoV,29,N/A,0.7,0.5
+HCoV,30,N/A,0.7,0.6
+HCoV,31,N/A,0.8,0.6
+HCoV,32,N/A,0.6,0.4
+HCoV,33,N/A,0.6,0.8
+HCoV,34,N/A,0.8,0.6
+HMPV,35,0.4,0.3,1.8
+HMPV,36,0.2,0.4,1.8
+HMPV,37,0.2,0.4,1.4
+HMPV,38,0.2,0.4,1.6
+HMPV,39,0.2,0.5,1.4
+HMPV,40,0.2,0.3,1.5
+HMPV,41,0.2,0.4,1.7
+HMPV,42,0.2,0.5,1.6
+HMPV,43,0.3,0.5,1.8
+HMPV,44,0.3,0.6,1.8
+HMPV,45,0.3,0.6,2.1
+HMPV,46,0.5,0.8,1.9
+HMPV,47,0.5,1,1.8
+HMPV,48,0.6,0.9,1.9
+HMPV,49,0.8,1.2,1.9
+HMPV,50,1,1.3,1.9
+HMPV,51,1.1,1.6,2.2
+HMPV,52,1.4,1.8,2.8
+HMPV,1,1.4,2.2,2.9
+HMPV,2,1.6,1.6,2.6
+HMPV,3,1.4,2.2,2.6
+HMPV,4,N/A,2.1,2.7
+HMPV,5,N/A,2.3,3
+HMPV,6,N/A,2.5,3.7
+HMPV,7,N/A,2.8,4.4
+HMPV,8,N/A,3.1,4.3
+HMPV,9,N/A,3.9,4.7
+HMPV,10,N/A,4.6,5
+HMPV,11,N/A,4.9,5.1
+HMPV,12,N/A,4.6,5.4
+HMPV,13,N/A,5,4.8
+HMPV,14,N/A,5.1,4.6
+HMPV,15,N/A,4.6,4.1
+HMPV,16,N/A,5.2,3.9
+HMPV,17,N/A,4.2,3.5
+HMPV,18,N/A,3.9,3.1
+HMPV,19,N/A,3.9,2.5
+HMPV,20,N/A,3.5,1.8
+HMPV,21,N/A,2.4,1.4
+HMPV,22,N/A,2.5,1.2
+HMPV,23,N/A,1.9,1.4
+HMPV,24,N/A,1.6,1
+HMPV,25,N/A,1.4,0.8
+HMPV,26,N/A,1.4,1
+HMPV,27,N/A,1,0.8
+HMPV,28,N/A,1.1,0.5
+HMPV,29,N/A,0.8,0.8
+HMPV,30,N/A,0.7,0.4
+HMPV,31,N/A,0.6,0.2
+HMPV,32,N/A,0.4,0.4
+HMPV,33,N/A,0.2,0.3
+HMPV,34,N/A,0.3,0.3
+HPIV,35,1.5,2,2.8
+HPIV,36,1.7,1.5,3.2
+HPIV,37,1.2,1.6,3
+HPIV,38,1.3,1.8,2.4
+HPIV,39,1.2,1.3,3.1
+HPIV,40,1.5,1.3,3.7
+HPIV,41,1.7,1.3,3.5
+HPIV,42,1.6,1.6,4.2
+HPIV,43,2.1,1.2,4.4
+HPIV,44,2.1,1.4,4.1
+HPIV,45,2.2,1.6,3.9
+HPIV,46,2.6,1.4,4
+HPIV,47,2.3,1.6,3.6
+HPIV,48,2.8,1.5,3
+HPIV,49,2.4,1.4,3
+HPIV,50,2.5,1.5,3
+HPIV,51,2.4,1.4,3.1
+HPIV,52,2.3,1.4,3.3
+HPIV,1,2,1.5,3.6
+HPIV,2,1.8,1.2,3.2
+HPIV,3,1.4,1.1,2.9
+HPIV,4,N/A,1.2,2.8
+HPIV,5,N/A,1.4,2.7
+HPIV,6,N/A,1.6,2.7
+HPIV,7,N/A,1.5,2.6
+HPIV,8,N/A,1.8,2.5
+HPIV,9,N/A,2.4,3.1
+HPIV,10,N/A,2.7,2.8
+HPIV,11,N/A,3.4,3.5
+HPIV,12,N/A,4.1,3
+HPIV,13,N/A,4.5,3.2
+HPIV,14,N/A,4.5,3.5
+HPIV,15,N/A,6,3.8
+HPIV,16,N/A,5.5,3.9
+HPIV,17,N/A,6.6,4.1
+HPIV,18,N/A,6.5,4.8
+HPIV,19,N/A,7,4.1
+HPIV,20,N/A,7,4.1
+HPIV,21,N/A,7.1,4.3
+HPIV,22,N/A,6.4,5.1
+HPIV,23,N/A,6,4.4
+HPIV,24,N/A,5.6,4.3
+HPIV,25,N/A,5,4.4
+HPIV,26,N/A,4.7,4.2
+HPIV,27,N/A,3.9,4.9
+HPIV,28,N/A,3.3,4.1
+HPIV,29,N/A,3,4
+HPIV,30,N/A,2.6,3.4
+HPIV,31,N/A,2.1,3.1
+HPIV,32,N/A,1.7,3.3
+HPIV,33,N/A,1.6,2.9
+HPIV,34,N/A,1.7,2.1
+Influenza,35,0.6,0.8,0.2
+Influenza,36,0.5,0.5,0.2
+Influenza,37,0.5,0.5,0.3
+Influenza,38,0.5,0.5,0.5
+Influenza,39,0.5,0.6,0.7
+Influenza,40,0.4,0.7,1
+Influenza,41,0.4,0.5,1.4
+Influenza,42,0.5,0.8,2.4
+Influenza,43,0.6,1.3,5.5
+Influenza,44,0.8,2.7,10.8
+Influenza,45,1,5.1,16.2
+Influenza,46,1.1,7.4,20.3
+Influenza,47,1.3,8.9,24.3
+Influenza,48,2.1,11.9,24.1
+Influenza,49,3.1,15,21.2
+Influenza,50,4.4,15.7,17.4
+Influenza,51,7.3,17.2,12.5
+Influenza,52,10.4,18.7,8
+Influenza,1,11.4,15.1,4.6
+Influenza,2,11.7,11.7,2.3
+Influenza,3,13.6,11.1,1.5
+Influenza,4,N/A,12.2,1.1
+Influenza,5,N/A,12.8,1
+Influenza,6,N/A,12.1,1
+Influenza,7,N/A,11.6,0.8
+Influenza,8,N/A,11.2,1.1
+Influenza,9,N/A,10.8,1.3
+Influenza,10,N/A,10.7,1.4
+Influenza,11,N/A,9.8,1.7
+Influenza,12,N/A,9.1,1.9
+Influenza,13,N/A,9.3,2.4
+Influenza,14,N/A,9,2.2
+Influenza,15,N/A,7.8,2.5
+Influenza,16,N/A,6.3,2.4
+Influenza,17,N/A,5.9,2.4
+Influenza,18,N/A,5.3,2.3
+Influenza,19,N/A,4.2,2.1
+Influenza,20,N/A,3.1,2.1
+Influenza,21,N/A,2,1.6
+Influenza,22,N/A,1.5,1.6
+Influenza,23,N/A,1.1,1.3
+Influenza,24,N/A,1,1.1
+Influenza,25,N/A,1.2,0.9
+Influenza,26,N/A,1.1,0.7
+Influenza,27,N/A,1,0.6
+Influenza,28,N/A,0.8,0.8
+Influenza,29,N/A,0.6,0.5
+Influenza,30,N/A,0.4,0.5
+Influenza,31,N/A,0.4,0.5
+Influenza,32,N/A,0.4,0.7
+Influenza,33,N/A,0.3,0.7
+Influenza,34,N/A,0.3,0.6
+Influenza A,35,0.5,0.7,0.2
+Influenza A,36,0.4,0.4,0.1
+Influenza A,37,0.5,0.5,0.2
+Influenza A,38,0.5,0.5,0.5
+Influenza A,39,0.4,0.5,0.7
+Influenza A,40,0.4,0.6,1
+Influenza A,41,0.4,0.5,1.4
+Influenza A,42,0.5,0.7,2.4
+Influenza A,43,0.5,1.2,5.5
+Influenza A,44,0.7,2.6,10.8
+Influenza A,45,0.8,4.9,16.2
+Influenza A,46,0.9,7.2,20.2
+Influenza A,47,1.2,8.8,24.3
+Influenza A,48,1.9,11.6,24
+Influenza A,49,3,14.7,21.1
+Influenza A,50,4.2,15.3,17.3
+Influenza A,51,7,16.8,12.5
+Influenza A,52,9.9,18.2,7.9
+Influenza A,1,10.9,14.5,4.5
+Influenza A,2,11.3,11.2,2.2
+Influenza A,3,12.9,10.3,1.4
+Influenza A,4,N/A,11.1,0.9
+Influenza A,5,N/A,11.3,0.8
+Influenza A,6,N/A,10.4,0.7
+Influenza A,7,N/A,9.4,0.6
+Influenza A,8,N/A,8,0.6
+Influenza A,9,N/A,6.7,0.6
+Influenza A,10,N/A,5.5,0.6
+Influenza A,11,N/A,4.4,0.5
+Influenza A,12,N/A,3.3,0.6
+Influenza A,13,N/A,2.7,0.6
+Influenza A,14,N/A,2.3,0.4
+Influenza A,15,N/A,1.8,0.6
+Influenza A,16,N/A,1.4,0.5
+Influenza A,17,N/A,1.1,0.5
+Influenza A,18,N/A,1.1,0.5
+Influenza A,19,N/A,0.9,0.7
+Influenza A,20,N/A,0.7,0.8
+Influenza A,21,N/A,0.5,0.5
+Influenza A,22,N/A,0.6,0.5
+Influenza A,23,N/A,0.6,0.6
+Influenza A,24,N/A,0.6,0.6
+Influenza A,25,N/A,0.9,0.6
+Influenza A,26,N/A,0.9,0.5
+Influenza A,27,N/A,0.8,0.4
+Influenza A,28,N/A,0.7,0.6
+Influenza A,29,N/A,0.5,0.5
+Influenza A,30,N/A,0.3,0.5
+Influenza A,31,N/A,0.3,0.4
+Influenza A,32,N/A,0.3,0.6
+Influenza A,33,N/A,0.3,0.6
+Influenza A,34,N/A,0.3,0.5
+Influenza B,35,0,0.1,0
+Influenza B,36,0,0.1,0
+Influenza B,37,0,0,0
+Influenza B,38,0,0,0
+Influenza B,39,0,0.1,0
+Influenza B,40,0,0.1,0
+Influenza B,41,0,0,0
+Influenza B,42,0,0.1,0.1
+Influenza B,43,0.1,0.1,0
+Influenza B,44,0.1,0.1,0
+Influenza B,45,0.1,0.1,0
+Influenza B,46,0.1,0.2,0.1
+Influenza B,47,0.1,0.1,0
+Influenza B,48,0.2,0.3,0
+Influenza B,49,0.2,0.3,0.1
+Influenza B,50,0.2,0.4,0.1
+Influenza B,51,0.3,0.5,0.1
+Influenza B,52,0.5,0.5,0.1
+Influenza B,1,0.4,0.6,0.1
+Influenza B,2,0.4,0.6,0.1
+Influenza B,3,0.6,0.8,0.1
+Influenza B,4,N/A,1.1,0.1
+Influenza B,5,N/A,1.5,0.3
+Influenza B,6,N/A,1.8,0.3
+Influenza B,7,N/A,2.2,0.3
+Influenza B,8,N/A,3.2,0.5
+Influenza B,9,N/A,4,0.7
+Influenza B,10,N/A,5.1,0.8
+Influenza B,11,N/A,5.4,1.1
+Influenza B,12,N/A,5.8,1.3
+Influenza B,13,N/A,6.6,1.7
+Influenza B,14,N/A,6.8,1.8
+Influenza B,15,N/A,6,1.9
+Influenza B,16,N/A,5,1.9
+Influenza B,17,N/A,4.7,1.9
+Influenza B,18,N/A,4.2,1.8
+Influenza B,19,N/A,3.3,1.5
+Influenza B,20,N/A,2.4,1.3
+Influenza B,21,N/A,1.5,1.1
+Influenza B,22,N/A,0.9,1
+Influenza B,23,N/A,0.6,0.7
+Influenza B,24,N/A,0.3,0.5
+Influenza B,25,N/A,0.3,0.3
+Influenza B,26,N/A,0.2,0.2
+Influenza B,27,N/A,0.1,0.2
+Influenza B,28,N/A,0.1,0.2
+Influenza B,29,N/A,0.1,0.1
+Influenza B,30,N/A,0.1,0
+Influenza B,31,N/A,0.1,0.1
+Influenza B,32,N/A,0.1,0.1
+Influenza B,33,N/A,0.1,0.1
+Influenza B,34,N/A,0.1,0.1
+RSV,35,0.5,0.6,1.1
+RSV,36,0.5,0.7,1.1
+RSV,37,0.6,0.8,1.1
+RSV,38,0.6,1.1,1.5
+RSV,39,0.8,1.1,2.1
+RSV,40,0.8,1.4,2.5
+RSV,41,1.1,1.8,3.6
+RSV,42,1.3,2.4,4.6
+RSV,43,1.5,3.3,6.8
+RSV,44,1.9,4.1,7.8
+RSV,45,2.7,5.1,7.7
+RSV,46,4.1,5.8,7.5
+RSV,47,5.5,6.8,6.7
+RSV,48,7.1,7,6.9
+RSV,49,8.5,7.4,7.3
+RSV,50,9.6,7.3,8.6
+RSV,51,11.1,7.3,9.2
+RSV,52,11.7,7.4,10.6
+RSV,1,10.8,7.1,10.3
+RSV,2,9.1,6.3,9.1
+RSV,3,8.7,6.1,8.4
+RSV,4,N/A,5.8,8
+RSV,5,N/A,5.9,7.2
+RSV,6,N/A,5.2,5.8
+RSV,7,N/A,4.5,5.1
+RSV,8,N/A,4.8,4.5
+RSV,9,N/A,3.8,3.7
+RSV,10,N/A,3.6,2.8
+RSV,11,N/A,3.2,2.2
+RSV,12,N/A,2.5,2
+RSV,13,N/A,2.3,1.6
+RSV,14,N/A,2.1,1.3
+RSV,15,N/A,1.8,1.4
+RSV,16,N/A,1.7,1.3
+RSV,17,N/A,1.5,1.1
+RSV,18,N/A,1.3,0.9
+RSV,19,N/A,1.1,0.7
+RSV,20,N/A,1,0.7
+RSV,21,N/A,0.8,0.4
+RSV,22,N/A,0.7,0.6
+RSV,23,N/A,0.4,0.4
+RSV,24,N/A,0.6,0.3
+RSV,25,N/A,0.4,0.3
+RSV,26,N/A,0.5,0.4
+RSV,27,N/A,0.4,0.3
+RSV,28,N/A,0.5,0.4
+RSV,29,N/A,0.6,0.5
+RSV,30,N/A,0.3,0.5
+RSV,31,N/A,0.4,0.5
+RSV,32,N/A,0.5,0.6
+RSV,33,N/A,0.4,0.4
+RSV,34,N/A,0.3,0.5
+SARS-CoV-2,35,17.8,14.4,13.4
+SARS-CoV-2,36,18.3,15.9,13.1
+SARS-CoV-2,37,18.6,16.5,12.7
+SARS-CoV-2,38,18.9,18.6,13.6
+SARS-CoV-2,39,17,19.6,14.4
+SARS-CoV-2,40,16.1,19.8,15.1
+SARS-CoV-2,41,15,17.6,16.6
+SARS-CoV-2,42,15.6,17.8,15.4
+SARS-CoV-2,43,15.1,17.9,15.8
+SARS-CoV-2,44,13.8,17.7,13.9
+SARS-CoV-2,45,12.5,18.2,12.4
+SARS-CoV-2,46,11,18.8,12
+SARS-CoV-2,47,10.2,19.3,11.8
+SARS-CoV-2,48,9.7,18,12.1
+SARS-CoV-2,49,9.2,17.5,12.6
+SARS-CoV-2,50,10,17.8,13.1
+SARS-CoV-2,51,9.7,16.8,14.1
+SARS-CoV-2,52,9,15.3,15.5
+SARS-CoV-2,1,9.2,14.5,15
+SARS-CoV-2,2,8.4,13,13.4
+SARS-CoV-2,3,6.8,11.3,12.2
+SARS-CoV-2,4,N/A,10.2,11.3
+SARS-CoV-2,5,N/A,9.3,11.5
+SARS-CoV-2,6,N/A,8.8,11.9
+SARS-CoV-2,7,N/A,8.1,11.8
+SARS-CoV-2,8,N/A,7.5,11.7
+SARS-CoV-2,9,N/A,7,11.2
+SARS-CoV-2,10,N/A,6.2,11.4
+SARS-CoV-2,11,N/A,6.1,11.6
+SARS-CoV-2,12,N/A,5.2,11.3
+SARS-CoV-2,13,N/A,4.8,10.8
+SARS-CoV-2,14,N/A,4.7,10.9
