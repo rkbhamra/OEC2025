@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 import time
 
 app = Flask(__name__)
+CORS(app)
 import queries
 
 
@@ -19,11 +21,16 @@ def submit():
     return jsonify(response)
 
 
-@app.route('/data:<string:city>', methods=['GET'])
+@app.route('/data/<city>', methods=['GET'])
 def get(city):
     # get data from database
 
-    response = {'data': "PUT DATA HERE"}
+    print(city)
+
+    ret = queries.getTopNearMe(city)
+    print(ret)
+
+    response = {'data': ret}
     return jsonify(response)
 
 

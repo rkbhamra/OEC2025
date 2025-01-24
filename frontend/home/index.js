@@ -19,7 +19,9 @@ async function init() {
   const city = userLocation.location.city;
   document.getElementById("city").innerText = city;
 
+  console.log("aaa")
   const data = await getData(city);
+  console.log(data)
 }
 
 init();
