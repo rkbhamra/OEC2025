@@ -1,4 +1,4 @@
-Region,Virus,Surveillance week,Week end-date,tests,detections,Percent positivity (%)
+Region,Virus,WeekNumber,Week-end-date,tests,detections,positivity
 Atlantic,SARS-CoV-2,35,2023-09-02,"2,110",357,16.9
 Atlantic,SARS-CoV-2,36,2023-09-09,"2,346",474,20.2
 Atlantic,SARS-CoV-2,37,2023-09-16,"2,567",478,18.6
