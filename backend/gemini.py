@@ -2,6 +2,7 @@ import requests
 
 api_key = ""
 
+
 def generate_content(d):
     api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
@@ -11,7 +12,7 @@ def generate_content(d):
 
     payload = {
         "contents": [{
-            "parts": [{"text": "generate a warning message for a given json report on a disaster event, make it unique: " + d}]
+            "parts": [{"text": "generate one warning message for a given json report on a disaster event, make it unique: " + d}]
         }]
     }
 
@@ -19,7 +20,7 @@ def generate_content(d):
 
     if response.status_code == 200:
         data = response.json()
-        print(data)
+        return data['candidates'][0]['content']['parts'][0]['text']
     else:
         print(f"Error: {response.status_code}")
 
