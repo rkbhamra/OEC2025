@@ -58,19 +58,20 @@ async function submitReport() {
     });
 
   console.log(city, prov, country, type, svSliderSubmit, gpslat, gpslong);
+  let jsonBody = JSON.stringify({
+    city,
+    prov,
+    country,
+    type,
+    svSliderSubmit,
+    gpslat,
+    gpslong,
+  });
 
   await fetch("http://127.0.0.1:5000/submit", {
     method: "POST",
     headers: new Headers({ "content-type": "application/json" }),
-    body: JSON.stringify({
-      city,
-      prov,
-      country,
-      type,
-      svSliderSubmit,
-      gpslat,
-      gpslong,
-    }),
+    body: jsonBody,
   })
     .then((response) => response.json())
     .then((data) => {
@@ -80,6 +81,6 @@ async function submitReport() {
       console.error("Error:", error);
     });
 
-  socket.send("New report submitted");
+  socket.send(JSON.stringify({ city, prov, country, type }));
   window.location.href = "../submitted";
 }
