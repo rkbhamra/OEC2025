@@ -12,6 +12,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <navbar-component page="home"></navbar-component>
@@ -33,6 +34,11 @@
         </div>
       </div>
     </section>
+    <section class="my-5">
+      <div class="container">
+        <canvas id="myChart"></canvas>
+      </div>
+    </section>
     <script type="module" src="../global.js"></script>
     <script type="module" src="../components.js"></script>
     <script src="./index.js"></script>
@@ -41,5 +47,60 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Example data from the query function
+      const data = [
+        { Region: 'Atlantic', Virus: 'SARS-CoV-2', WeekNumber: 40, 'Week-end-date': '2023-10-07', tests: 3544.0, detections: 865.0, positivity: 24.4 },
+        { Region: 'Atlantic', Virus: 'SARS-CoV-2', WeekNumber: 48, 'Week-end-date': '2023-12-02', tests: 3648.0, detections: 802.0, positivity: 22.0 },
+        // Add more data as needed
+      ];
+
+      // Prepare data for the chart
+      const labels = data.map(item => item['Week-end-date']);
+      const testsData = data.map(item => item.tests);
+      const detectionsData = data.map(item => item.detections);
+      const positivityData = data.map(item => item.positivity);
+
+      const ctx = document.getElementById('myChart').getContext('2d');
+      const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: 'Tests',
+              data: testsData,
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1,
+              fill: false
+            },
+            {
+              label: 'Detections',
+              data: detectionsData,
+              borderColor: 'rgba(153, 102, 255, 1)',
+              borderWidth: 1,
+              fill: false
+            },
+            {
+              label: 'Positivity',
+              data: positivityData,
+              borderColor: 'rgba(255, 159, 64, 1)',
+              borderWidth: 1,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          scales: {
+            x: {
+              beginAtZero: true
+            },
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
   </body>
 </html>
