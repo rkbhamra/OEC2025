@@ -4,7 +4,7 @@ The project uses Flask for server hosting, Python as the backend, HTML and JS fo
 1. `pip install spacy`
 2. `python -m spacy download en_core_web_sm`
 
-Gemini uses an API key. In order to run the project, an API key will be needed.This project also uses two different APIs to get the user's IP address and data:
+Gemini uses an API key. In order to run the project, an API key will be needed in the file `gemini.py` inside the backend folder.This project also uses two different APIs to get the user's IP address and data:
 1. `https://api.ipify.org?format=json`
 2. `https://api.ipapi.is?q=${data.ip}`
 
@@ -17,3 +17,8 @@ async function getUserLocation() {
         });
 }
 ```
+
+To run the program,
+1. Download the zip file from GitHub into a desktop folder.
+2. Run the command `python backend/server.py`
+3. Open up the html page `frontend/home/index.html`
