@@ -6,6 +6,7 @@ import time
 import queries
 from flask_sock import Sock
 import nlpQuery
+from gemini import generate_content
 
 app = Flask(__name__)
 CORS(app)
@@ -19,7 +20,7 @@ def echo(ws):
     try:
         while True:
             message = ws.receive()
-            print('hahahah')
+            message = generate_content(message)
             for client in clients:
                 if client != ws:
                     client.send(message)
@@ -59,7 +60,7 @@ def query():
     ret = nlpQuery.main(data['query'])
 
     response = {'status': '200', 'data': ret.to_json()}
-    print(response)
+    # print(response)
 
     return jsonify(response)
 
