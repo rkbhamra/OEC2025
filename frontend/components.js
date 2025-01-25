@@ -54,14 +54,6 @@ class Navbar extends HTMLElement {
 
       document.querySelector("#alert").appendChild(alertElement);
     });
-
-    socket.addEventListener("close", () => {
-      console.log("WebSocket connection closed");
-    });
-
-    socket.addEventListener("error", (error) => {
-      console.error("WebSocket error:", error);
-    });
   }
 }
 

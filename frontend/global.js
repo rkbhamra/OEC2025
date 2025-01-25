@@ -4,4 +4,8 @@ socket.addEventListener("open", () => {
   console.log("WebSocket connection established");
 });
 
+socket.addEventListener("close", () => {
+  socket.send("WebSocket connection closed");
+});
+
 export { socket };
