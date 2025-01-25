@@ -3,7 +3,7 @@ import datetime
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 import time
-# import queries
+import queries
 from flask_sock import Sock
 
 app = Flask(__name__)
