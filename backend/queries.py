@@ -16,9 +16,14 @@ curL = cnx.cursor()
 #     # print(curL.fetchall())
 #     return curL.fetchall()
 
-def report(lat, long, dtype, city,  prov, country, severity, time):
+def report(lat, long, dtype, city, prov, country, severity, time):
     curL.execute("INSERT into reports (City, Province, Country, Type, Severity, TotalReports, Latitude, Longitude, TimeOfReport) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", 
                 (city, prov, country, dtype, severity, 1, lat, long, time))
+    cnx.commit()
+
+def update(rid, severity, time):
+    curL.execute("INSERT into updates (ReportId, Severity, TimeOfUpdate) VALUES (%s, %s, %s)", (rid, severity, time))
+    curL.execute(f"UPDATE reports SET totalreports = totalreports + 1 where id = {rid}")
     cnx.commit()
 
 def getTopNearMe(city):
@@ -26,8 +31,8 @@ def getTopNearMe(city):
     # print(curL.fetchall())
     return curL.fetchall()
 
-def checkForSimilar(type, lat, long):
-    curL.execute(f"SELECT * FROM reports where type = {type} AND abs(Latitude - {lat}) < 0.5 AND abs(Longitude - {long}) < 0.5")
+def checkForSimilar(dtype, lat, long):
+    curL.execute(f"SELECT * FROM reports where type = \"{dtype}\" AND abs(Latitude - {lat}) < 0.5 AND abs(Longitude - {long}) < 0.5")
 
     ret = curL.fetchall()
     print(ret)

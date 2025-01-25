@@ -32,9 +32,16 @@ def submit():
     # data['type'], data['city'], data['country'], data['user']
     date = time.strftime('%Y-%m-%d %H:%M:%S')
     print(data)
+    similar = queries.checkForSimilar(data['type'], data['gpslat'], data['gpslong'])
+    print(len(similar))
 
-    # add data to database
-    queries.report(data['gpslat'], data['gpslong'], data['type'], data['city'], data['prov'], data['country'], data['svSliderSubmit'], date)
+    if len(similar) > 0:
+        print(similar[0][0])
+        queries.update(similar[0][0], data['svSliderSubmit'], date)
+    else:
+    
+        # add data to database
+        queries.report(data['gpslat'], data['gpslong'], data['type'], data['city'], data['prov'], data['country'], data['svSliderSubmit'], date)
 
     response = {'status': '200'}
     print(response)
