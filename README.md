@@ -1,12 +1,10 @@
-# HEALTH HUB
+# DisasterMaster
 
 The project uses Flask for server hosting, Python as the backend, HTML and JS for the frontend, and spaCy as the NLP model library. To run the project, please make sure you have all those installed. To install spaCy, please use the following commands:
 1. `pip install spacy`
 2. `python -m spacy download en_core_web_sm`
 
-For Gemini, use this API key: `AIzaSyAnLtSfIUSyDcwQs5pxY-q1JmJOKydSwLQ`.
-
-This project also uses two different APIs to get the user's IP address and data:
+Gemini uses an API key. In order to run the project, an API key will be needed.This project also uses two different APIs to get the user's IP address and data:
 1. `https://api.ipify.org?format=json`
 2. `https://api.ipapi.is?q=${data.ip}`
 
