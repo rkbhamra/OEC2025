@@ -3,7 +3,7 @@ import datetime
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 import time
-import queries
+# import queries
 from flask_sock import Sock
 
 app = Flask(__name__)
@@ -51,8 +51,8 @@ def submit():
 
 @app.route('/data/<city>', methods=['GET'])
 def get(city):
-    ret = queries.getTopNearMe(city)
-    # ret = [(1, 'Hamilton', 'ON', 'Canada', 1, 3, 1, 43.2501, -79.8496, datetime.datetime(2025, 1, 24, 3, 19, 30))]
+    #ret = queries.getTopNearMe(city)
+    ret = [(1, 'Hamilton', 'ON', 'Canada', 1, 3, 1, 43.2501, -79.8496, datetime.datetime(2025, 1, 24, 3, 19, 30))]
     print(ret)
 
     response = {'data': ret}

@@ -30,7 +30,8 @@ async function init() {
     block.className = "report-block";
     block.innerHTML = `
       <div class="card mb-3">
-      <div class="card-body">
+      <div class="card-body d-flex flex-column flex-md-row">
+        <div class="report-details mb-3 mb-md-0" style="flex: 1;">
         <h5 class="card-title">Report ID: ${e[0]}</h5>
         <p class="card-text"><strong>City:</strong> ${e[1]}</p>
         <p class="card-text"><strong>Province:</strong> ${e[2]}</p>
@@ -38,9 +39,20 @@ async function init() {
         <p class="card-text"><strong>Type:</strong> ${e[4]}</p>
         <p class="card-text"><strong>Total Reports:</strong> ${e[6]}</p>
         <p class="card-text"><strong>Status:</strong> ${e[5]}</p>
-        <p class="card-text"><strong>Latitude:</strong> ${e[7]}</p>
-        <p class="card-text"><strong>Longitude:</strong> ${e[8]}</p>
         <p class="card-text"><strong>Time:</strong> ${new Date(e[9]).toLocaleString()}</p>
+        </div>
+        <div class="map-container" style="flex: 1;">
+        <iframe
+          width="600"
+          height="400"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?q=${e[7]},${e[8]}&hl=en-US&amp;z=14&amp;output=embed"
+        >
+        </iframe>
+        </div>
       </div>
       </div>
     `;
