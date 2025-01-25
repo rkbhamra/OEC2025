@@ -4,6 +4,8 @@ The project uses Flask for server hosting, Python as the backend, HTML and JS fo
 1. `pip install spacy`
 2. `python -m spacy download en_core_web_sm`
 
+For Gemini, use this API key: `AIzaSyAnLtSfIUSyDcwQs5pxY-q1JmJOKydSwLQ`.
+
 This project also uses two different APIs to get the user's IP address and data:
 1. `https://api.ipify.org?format=json`
 2. `https://api.ipapi.is?q=${data.ip}`
