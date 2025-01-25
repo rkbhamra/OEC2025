@@ -92,4 +92,4 @@ def main(query):
 #query = "show me tests where detections are less than 500"
 query = "show events where tests are more than 3000"
 
-main(query)
+# main(query)
