@@ -1,5 +1,6 @@
 import { socket } from "../global.js";
 
+
 document.submitQuery = submitQuery;
 async function submitQuery() {
   const query = document.getElementById("query-text").value;
@@ -45,6 +46,8 @@ function addLine(data) {
         console.log(element);
         
     });
+
+    df = pd.json_norma
 
     // Prepare data for the chart
     const labels = data.map(item => item['Week-end-date']);
