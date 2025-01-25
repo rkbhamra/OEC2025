@@ -59,7 +59,7 @@ def query():
     ret = nlpQuery.main(data['query'])
 
     response = {'status': '200', 'data': ret.to_json()}
-    print(response)
+    # print(response)
 
     return jsonify(response)
 
