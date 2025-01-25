@@ -81,6 +81,6 @@ async function submitReport() {
       console.error("Error:", error);
     });
 
-  socket.send(jsonBody);
+  socket.send(JSON.stringify({ city, prov, country, type }));
   window.location.href = "../submitted";
 }
